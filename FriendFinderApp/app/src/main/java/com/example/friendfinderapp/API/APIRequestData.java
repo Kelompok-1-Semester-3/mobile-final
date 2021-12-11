@@ -2,7 +2,6 @@ package com.example.friendfinderapp.API;
 
 import com.example.friendfinderapp.Model.Event_Model;
 import com.example.friendfinderapp.Model.ResponseModel;
-import com.example.friendfinderapp.userEvent;
 
 import java.util.List;
 
@@ -17,7 +16,9 @@ public interface APIRequestData {
 
     @FormUrlEncoded
     @POST("API/getUserByEmail")
-    Call<ResponseModel> ardGetDataUserByEmail(@Field("email") String email);
+    Call<ResponseModel> ardGetDataUserByEmail(
+            @Field("email") String email
+    );
 
 
     @FormUrlEncoded
@@ -40,6 +41,6 @@ public interface APIRequestData {
     Call<List<Event_Model>> resAllUserEvent(@Path("id") String id);
 
     @GET("API/getEventByKeyword/{keyword}")
-    Call<List<userEvent>> resEventByKeyword(@Path("keyword") String keyword);
+    Call<List<Event_Model>> resEventByKeyword(@Path("keyword") String keyword);
 
 }
