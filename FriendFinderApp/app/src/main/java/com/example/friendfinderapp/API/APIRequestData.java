@@ -17,9 +17,7 @@ public interface APIRequestData {
 
     @FormUrlEncoded
     @POST("API/getUserByEmail")
-    Call<ResponseModel> ardGetDataUserByEmail(
-            @Field("email") String email
-    );
+    Call<ResponseModel> ardGetDataUserByEmail(@Field("email") String email);
 
 
     @FormUrlEncoded
