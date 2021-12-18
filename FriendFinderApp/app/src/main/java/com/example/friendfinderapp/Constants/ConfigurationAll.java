@@ -3,7 +3,7 @@ package com.example.friendfinderapp.Constants;
 public class ConfigurationAll {
 
     public static String user_id = "";
-    static String ip = "192.168.2.19";
+    static String ip = "192.168.1.28";
     public static final String baseUrl = "http://" + ip + "/friend-finder/public/";
 
     public static String ImageURL = "http://" + ip + "/friend-finder/public/img/";
@@ -13,4 +13,3 @@ public class ConfigurationAll {
     public static final String THUMBNAIL_PLACE_URL = "http://" + ip + "/friend-finder/public/API/getDataPlace";
     public static final String PLACE_URL = "http://" + ip + "/friend-finder/public/API/getDataPlace";
 }
-
