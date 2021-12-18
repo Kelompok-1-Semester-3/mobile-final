@@ -14,13 +14,13 @@
         android:src="@drawable/icons_google"/>
 
     <Button
+        android:id="@+id/btn_photo"
+        style="@style/Widget.AppCompat.ActionButton.CloseMode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.ActionButton.CloseMode"
-        android:text="Edit Photo"
         android:layout_below="@+id/profile_image"
         android:layout_centerHorizontal="true"
-        android:id="@+id/btn_photo"/>
+        android:text="Edit Photo" />
 
     <LinearLayout
         android:layout_marginLeft="30dp"
@@ -89,4 +89,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_save"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Save"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
