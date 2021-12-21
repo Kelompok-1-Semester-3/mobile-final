@@ -17,6 +17,7 @@ import com.example.friendfinderapp.Home;
 import com.example.friendfinderapp.HomeFragment;
 import com.example.friendfinderapp.Model.ResponseModel;
 import com.example.friendfinderapp.R;
+import com.example.friendfinderapp.UserFragment;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -103,6 +104,7 @@ public class SignIn extends AppCompatActivity {
                 HomeFragment.profile = profile;
                 EventFragment.username = fullname;
                 EventFragment.profile = profile;
+                UserFragment.id = id;
 
                 ConfigurationAll.user_id = id;
 

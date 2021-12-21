@@ -44,4 +44,11 @@ public interface APIRequestData {
     @GET("API/getEventByKeyword/{keyword}")
     Call<List<userEvent>> resEventByKeyword(@Path("keyword") String keyword);
 
+    @FormUrlEncoded
+    @POST("API/updateProfil")
+    Call<ResponseModel> updateProfil(
+            @Field("id") String id,
+            @Field("fullname") String fullname,
+            @Field("email") String email
+    );
 }
